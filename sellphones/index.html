@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- heder -->
+
+    <div class="body">
+        <div class="header">
+            <div class="header_logo">
+                <h2>Gian Hàng Nhỏ</h2>
+            </div>
+            <div class="header_icon">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-cart-shopping">
+                    <div class="number_product_in_home">0</div>
+                </i>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="cart">
+                <div class="header_cart">
+                    <h2>Giỏ hàng</h2>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <p>Tổng số sản phẩm :<i class="number_product_in_cart">0</i></p>
+
+                <table id="table">
+                </table>
+                <p style="text-align: end;" class="total_price_cart"> Tổng Tiền:0</p>
+                <p style="text-align: end;">
+                    <button>Thanh Toán</button>
+                </p>
+
+            </div>
+        </div>
+        <div class="icon_compare"> <i class="fa-solid fa-plus fa-2x"></i></div>
+        <div class="gallery_compare">
+            <i class="fa-solid fa-xmark fa-2x"></i>
+            <div class="compare_product">
+            </div>
+        </div>
+        <div class=" all_content">
+            <div class="content">
+                <!-- classify -->
+                <div class="search_product">
+                    <div>
+                        <input type="text" placeholder="Tìm Kiếm Tên Sản Phẩm..." class="search" value="">
+                        <select id="cars" onchange="price(this)">
+                            <option value="0">All</option>
+                            <option value="1">dưới 10 triệu</option>
+                            <option value="2">từ 10 đến 20 triệu</option>
+                            <option value="3">Trên 20 triệu</option>
+                        </select>
+                        <form action="" id="form">
+                            <input type="radio" name="phone" id="all" value="All">All
+                            <input type="radio" name="phone" id="1" value="1">Iphone
+                            <input type="radio" name="phone" id="2" value="2">Samsung
+                            <input type="radio" name="phone" id="3" value="3">Nokia
+                        </form>
+                    </div>
+                    <br> <button class="all_search">Tìm Kiếm </button>
+                </div>
+            </div>
+            <!-- product -->
+            <div class="iphone_product">
+                <h2>Iphone</h2>
+                <div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/iphone/iphone-11.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Iphone-11</h3>
+                        <div>
+                            <span>6.1"</span>
+                            <span>Liquid Retina</span>
+                        </div>
+                        <div>
+                            <span>64GB</span>
+                            <span>128GB</span>
+                        </div>
+                        <del>19.990.000</del>-17%<br>
+                        <h5 class="price_product">16.490.000đ</h5>
+                        <p>Giá rẻ:15.590.000</p>
+                        <li class="chip">Chip Apple A14 Bionic</li>
+                        <li class="ram">RAM:4G</li>
+                        <li>dung lượng:64G</li>
+                        <li class="camera">Camera sau :2 camera 12MP</li>
+                        <li>Cam trước :12MP</li>
+                        <li class="pin">Pin 2815 mAh, Sạc 20W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng </button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/iphone/iphone-14-pro-tim.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Iphone-14 tím</h3>
+                        <div>
+                            <span>6.1"</span>
+                            <span>Liquid Retina</span>
+                        </div>
+                        <div>
+                            <span>128GB</span>
+                            <span>1TB</span>
+                        </div>
+                        <del>30.990.000</del>-12%<br>
+                        <h5 class="price_product">27.490.000đ</h5>
+                        <p>Giá rẻ:11.690.000</p>
+                        <li class="chip">Chip Apple A16 Bionic</li>
+                        <li class="ram">RAM:6G</li>
+                        <li>dung lượng:128G</li>
+                        <li class="camera">Camera sau :Chính 48MP và Phụ 12MP</li>
+                        <li>Cam trước :12MP</li>
+                        <li class="pin">Pin 3110 mAh, Sạc 20W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/iphone/iphone-13-mini.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Iphone-13 mini</h3>
+                        <div>
+                            <span>6.1"</span>
+                            <span>Liquid Retina</span>
+                        </div>
+                        <div>
+                            <span>64GB</span>
+                            <span>128GB</span>
+                        </div>
+                        <del>14.990.000</del>-16%<br>
+                        <h5 class="price_product">12.490.000đ</h5>
+                        <p>Giá rẻ:11.690.000</p>
+                        <li class="chip">Chip Apple A13 Bionic</li>
+                        <li class="ram">RAM:4G</li>
+                        <li>dung lượng:64G</li>
+                        <li class="camera">Camera sau :2 camera 12MP</li>
+                        <li>Cam trước :12MP</li>
+                        <li class="pin">Pin 3110 mAh, Sạc 18W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/iphone/iphone-13-pro-max.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Iphone-13 proMax</h3>
+                        <div>
+                            <span>6.1"</span>
+                            <span>Liquid Retina</span>
+                        </div>
+                        <div>
+                            <span>64GB</span>
+                            <span>128GB</span>
+                        </div>
+                        <del>14.990.000</del>-16%<br>
+                        <h5 class="price_product">12.490.000đ</h5>
+                        <p>Giá rẻ:11.690.000</p>
+                        <li class="chip">Chip Apple A13 Bionic</li>
+                        <li class="ram">RAM:4G</li>
+                        <li>dung lượng:64G</li>
+                        <li class="camera">Camera sau :2 camera 12MP</li>
+                        <li>Cam trước :12MP</li>
+                        <li class="pin">Pin 3110 mAh, Sạc 18W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/iphone/iphone-13-pro.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Iphone-13 Pro</h3>
+                        <div>
+                            <span>6.1"</span>
+                            <span>Liquid Retina</span>
+                        </div>
+                        <div>
+                            <span>64GB</span>
+                            <span>128GB</span>
+                        </div>
+                        <del>14.990.000</del>-16%<br>
+                        <h5 class="price_product">12.490.000đ</h5>
+                        <p>Giá rẻ:11.690.000</p>
+                        <li class="chip">Chip Apple A13 Bionic</li>
+                        <li class="ram"> RAM:4G</li>
+                        <li>dung lượng:64G</li>
+                        <li class="camera">Camera sau :2 camera 12MP</li>
+                        <li>Cam trước :12MP</li>
+                        <li class="pin">Pin 3110 mAh, Sạc 18W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+
+                </div>
+                <button>Xem thêm</button>
+            </div>
+
+            <div class="samsung_product">
+                <h2>SamSung</h2>
+                <div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/samsung/Galaxy-S22-Black-600x600.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Galaxy-S22-Black</h3>
+                        <div>
+                            <span>6.8"</span>
+                            <span>Quad HD+ (2K+)</span>
+                        </div>
+                        <div>
+                            <span>8-256GB</span>
+                            <span>12-512GB</span>
+                        </div>
+                        <h5 class="price_product">31.990.000</h5><br>
+                        <li class="chip">Chip Apple A14 Bionic</li>
+                        <li class="ram">RAM:4G</li>
+                        <li>dung lượng:64G</li>
+                        <li class="camera">Camera sau :2 camera 12MP</li>
+                        <li>Cam trước :12MP</li>
+                        <li class="pin">Pin 2815 mAh, Sạc 20W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/samsung/samsung-galaxy-z-flip4-5g-128gb-thumb-tim-600x600.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Samsung Galaxy Z Flip4 5G</h3>
+                        <div>
+                            <span>Chính 6.7" Phụ 1.9"</span>
+                            <span>Fll HD+</span>
+                        </div>
+                        <div>
+                            <span>128GB</span>
+                            <span>1TB</span>
+                        </div>
+                        <del>23.990.000</del>-20%<br>
+                        <h5 class="price_product">18.990.000đ</h5>
+                        <li class="chip">Chip Snapdragon 8+ Gen 1</li>
+                        <li class="ram">RAM:8G</li>
+                        <li>dung lượng:128G</li>
+                        <li class="camera">Camera sau :2 camera 12MP</li>
+                        <li>Cam trước :10MP</li>
+                        <li class="pin">Pin 3700 mAh, Sạc 20W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/samsung/samsung-galaxy-a23-cam-thumb-600x600.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Samsung Galaxy A23</h3>
+                        <div>
+                            <span>6.6"</span>
+                            <span>full HD+</span>
+                        </div>
+                        <div>
+                            <span>4GB</span>
+                            <span>6GB</span>
+                        </div>
+                        <del>5.690.000</del>-10%<br>
+                        <h5 class="price_product">5.090.000đ</h5>
+
+                        <li class="chip">Chip Snapdragon 680</li>
+                        <li class="ram">RAM:4G</li>
+                        <li>dung lượng:128G</li>
+                        <li class="camera">Camera sau : 50MP phụ 5</li>
+                        <li>Cam trước :8MP</li>
+                        <li class="pin">Pin 5000 mAh, Sạc 25W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/samsung/samsung-galaxy-s20-fan-edition-xanh-la-thumbnew-600x600.jpeg"
+                                alt="">
+                        </div>
+                        <h3 class="name_product">Samsung Galaxy S20 FE</h3>
+                        <div>
+                            <span>6.5"</span>
+                            <span>Full HD+</span>
+                        </div>
+
+                        <del>12.490.000</del>-24%<br>
+                        <h5 class="price_product">9.490.000đ</h5>
+
+                        <li class="chip">Chip Snapdragon 865</li>
+                        <li class="ram">RAM:8G</li>
+                        <li>dung lượng:256G</li>
+                        <li class="camera">Camera sau : camera chính 12MP </li>
+
+                        <li>Cam trước :32MP</li>
+                        <li class="pin">Pin 4500 mAh, Sạc 25W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/samsung/samsung-galaxy-a73-5g-xam-thumb-600x600.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Samsung Galaxy A73 5G</h3>
+                        <div>
+                            <span>6.7"</span>
+                            <span>Full HD+</span>
+                        </div>
+
+                        <del>12.690.000</del>-13%<br>
+                        <h5 class="price_product">10.990.000đ</h5>
+
+                        <li class="chip">Chip Snapdragon 778G 5G</li>
+                        <li class="ram"RAM:8G</li>
+                        <li>dung lượng:128G</li>
+                        <li class="camera">Camera sau :2 camera 108MP</li>
+                        <li>Cam trước :32MP</li>
+                        <li class="pin">Pin 5000 mAh, Sạc 25W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                </div>
+                <button>Xem Thêm</button>
+            </div>
+            <div class="nokia_product">
+                <h2>NOKIA</h2>
+                <div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/nokia/Nokia-C21-Plus-Gray-600x600.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Nokia G21</h3>
+                        <div>
+                            <span>6.5"</span>
+                            <span>HD+</span>
+                        </div>
+
+                        <del>3.890.000</del>-15%<br>
+                        <h5 class="price_product">3.290.000đ</h5>
+
+                        <li class="chip">Chip Unisoc T606</li>
+                        <li class="ram">RAM:4G</li>
+                        <li>dung lượng:128G</li>
+                        <li class="camera">Camera sau :Chính 50MP phụ 2MP MP</li>
+                        <li>Cam trước :8MP</li>
+                        <li class="pin">Pin 5050 mAh, Sạc 18W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/nokia/nokia-g11-plus-xam-thumb-600x600.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Nokia G11</h3>
+                        <div>
+                            <span>6.5"</span>
+                            <span>HD+</span>
+                        </div>
+
+                        <del>3.590.000</del>-25%<br>
+                        <h5 class="price_product">2.690.000đ</h5>
+
+                        <li class="chip">Chip Unisoc T606</li>
+                        <li class="ram">RAM:4G</li>
+                        <li>dung lượng:128G</li>
+                        <li class="camera">Camera sau :Chính 13MP phụ 2MP MP</li>
+                        <li>Cam trước :8MP</li>
+                        <li class="pin">Pin 5050 mAh, Sạc 18W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/nokia/Nokia-C31-Green-thumb-600x600.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Nokia C31 (3G/32G)</h3>
+                        <div>
+                            <span>6.7"</span>
+                            <span>HD+</span>
+                        </div>
+
+                        <del>3.190.000</del>-21%<br>
+                        <h5 class="price_product">2.490.000đ</h5>
+                        <p>Giá rẻ:2.290.000</p>
+                        <li class="chip"> Chip Unisoc SC9863A1</li>
+                        <li class="ram">RAM:3G</li>
+                        <li>dung lượng:32G</li>
+                        <li class="camera">Camera sau :Chính 13MP phụ 2MP MP</li>
+                        <li>Cam trước :5MP</li>
+                        <li class="pin" >Pin 5050 mAh, Sạc 18W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/nokia/Nokia-C21-Plus-Gray-600x600.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Nokia C21</h3>
+                        <div>
+                            <span>6.5"</span>
+                            <span>HD+</span>
+                        </div>
+                        <div>
+                            <span>64GB</span>
+                            <span>32GB</span>
+                        </div>
+                        <del>3.190.000</del>-25%<br>
+                        <h5 class="price_product">2.390.000đ</h5>
+
+                        <li class="chip">Chip Spreadtrum SC9863A</li>
+                        <li class="ram">RAM:3G</li>
+                        <li>dung lượng:64G</li>
+                        <li class="camera">Camera sau :Chính 13MP</li>
+                        <li>Cam trước :5MP</li>
+                        <li class="pin">Pin 5050 mAh, Sạc 10W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+                    <div>
+                        <div class="imge">
+                            <img src="./img/nokia/nokia-g11-plus-xam-thumb-600x600.jpg" alt="">
+                        </div>
+                        <h3 class="name_product">Nokia G11 Phus</h3>
+                        <div>
+                            <span>6.51"</span>
+                            <span>HD+</span>
+                        </div>
+                        <div>
+                            <span>3GB-32GB</span>
+                            <span>3GB-64GB</span>
+                        </div>
+                        <del>3.190.000</del>-31%<br>
+                        <h5 class="price_product">2.190.000đ</h5>
+                        <li class="chip">Chip Unisoc T606</li>
+                        <li class="ram">RAM:3G</li>
+                        <li>dung lượng:32G</li>
+                        <li class="camera">Camera sau :Chính camera 50MP</li>
+                        <li>Cam trước :8MP</li>
+                        <li class="pin">Pin 5000 mAh, Sạc 10W</li>
+                        <div class="iphone_icon">
+                            <i class="fa-solid fa-plus"></i><i>So sánh</i>
+                        </div>
+                        <button class="buy_product">Mua hàng</button>
+                        <button> Chi tiết</button>
+
+                    </div>
+
+
+                </div>
+                <button>Xem Thêm</button>
+            </div>
+
+        </div>
+        <div class="notification_Compare">
+          Product had in Cart Compare
+        </div>
+       
+    </div>
+
+
+</body>
+<script src="./script.js"></script>
+
+
+</html>
+

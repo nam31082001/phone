@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+
+}
+
+.body {
+    height: 100vh;
+    position: relative;
+}
+
+/* header */
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(225, 203, 40);
+}
+
+
+.header_icon>i {
+    font-size: 25px;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.fa-cart-shopping>div {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    top: 10px;
+    left: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Gallery */
+.gallery {
+    background: rgb(183, 179, 179, 0.6);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.cart {
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    top: 20%;
+    left: 25%;
+    background: yellow;
+    overflow: scroll;
+}
+
+.header_cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_cart>i {
+    font-size: 30px;
+}
+
+.table_cart_img>img {
+    width: 60px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+/* content */
+.all_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 80%;
+}
+
+
+/* content */
+.all_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#cars {
+    width: 100px;
+    height: 30px;
+}
+
+.search_product>div {
+    display: flex;
+}
+
+.search_product>div * {
+    margin-top: 10px;
+}
+
+.search_product>div>form>input,
+.search_product>div>select {
+    margin: 10px 20px 0 20px;
+}
+
+.search_product>button {
+    margin-left: 50%;
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.iphone_product,
+.samsung_product,
+.nokia_product {
+    width: 90%;
+}
+
+.iphone_product>button,
+.samsung_product>button,
+.nokia_product>button {
+    margin: 10px 0 10px 0;
+}
+
+.iphone_product>div,
+.samsung_product>div,
+.nokia_product>div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    cursor: pointer;
+
+}
+
+.iphone_product>div>div:hover img,
+.samsung_product>div>div:hover img,
+.nokia_product>div>div:hover img {
+    transform: translateY(-10px);
+}
+
+.iphone_product>div>div *,
+.samsung_product>div>div *,
+.nokia_product>div>div * {
+    margin: 10px 0 10px 0;
+}
+
+.imge {
+    width: 100%;
+    height: 200px;
+}
+
+.imge>img {
+    width: 100%;
+    height: 100%;
+}
+
+.iphone_product>div>div>div:nth-child(3)>span,
+.samsung_product>div>div>div:nth-child(3)>span,
+.nokia_product>div>div>div:nth-child(3)>span {
+    background: rgb(183, 179, 179);
+
+}
+
+.iphone_product>div>div>div:nth-child(4)>span,
+.samsung_product>div>div>div:nth-child(4)>span,
+.nokia_product>div>div>div:nth-child(4)>span {
+    border: 1px solid;
+}
+
+.iphone_product>div>div>div:nth-child(4)>span:hover,
+.samsung_product>div>div>div:nth-child(4)>span:hover,
+.nokia_product>div>div>div:nth-child(4)>span:hover {
+    color: aqua;
+    border-color: aqua;
+}
+
+.iphone_icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.iphone_icon>i:nth-child(1) {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px dashed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iphone_icon:hover {
+    color: aqua;
+}
+
+.icon_compare {
+    position: fixed;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed;
+}
+
+.icon_compare:hover {
+    border-color: aqua;
+}
+
+.gallery_compare {
+    position: fixed;
+    z-index: 7;
+    width: 900px;
+    height: 200px;
+    top: 72%;
+    left: 20%;
+    background: wheat;
+    border: 1px solid;
+    display: none;
+}
+
+.gallery_compare>i {
+    display: block;
+    text-align: end;
+}
+
+.compare_product {
+    width: 100%;
+    height: 165px;
+    display: flex;
+
+
+}
+
+.compare_product>div {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.compare_product>div:not(:nth-child(4)) {
+    border: 1px dashed;
+}
+
+.btn_compare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn_compare>button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    background: aqua;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.compare_product>div>div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.compare_product>div>div>img {
+    width: 100px;
+}
+
+.notification_Compare {
+    position: fixed;
+    width: 200px;
+    height: 40px;
+    top: 50px;
+    right: -200px;
+    opacity: 0;
+    animation: notification 2s ease-in;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: yellow;
+}
+
+@keyframes notification {
+    0% {
+        right: -200px;
+        opacity: 0;
+    }
+
+    50% {
+        right: 20px;
+        opacity: 1;
+    }
+
+    70% {
+        right: 20px;
+        opacity: 1;
+    }
+    80% {
+        right: 20px;
+        opacity: 1;
+    }
+    90% {
+        right: 20px;
+        opacity: 1;
+    }
+
+    100% {
+
+        right: -200px;
+        opacity: 0;
+
+    }
+}
+
+.bgStyle{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: red;
+    top: 0;
+}
+.imgcheck{
+    width: 100px;
+}
